@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react'
 // Sonsuz döngüyü düzeltin
 export default function InputChanges() {
   const [value, setValue] = useState('')
-  const [count, setCount] = useState(-1)
+  const [count, setCount] = useState(0)
 
-  // useEffect(() => {
-  //   setCount(c=>c + 1);
-  // });
+  useEffect(() => {
+    console.log("çaşıştı");
+    setCount(c=>c + 1);
+  },[value]);
 
   function onChange(event) {
     setValue(event.target.value)
