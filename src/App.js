@@ -20,7 +20,7 @@ export default function InputChanges() {
         htmlFor='changes'
         className='block text-sm font-medium leading-6 text-gray-900'
       >
-        Toplam değişiklikler ( {count})
+        Toplam değişiklikler ( {count -1})
       </label>
       <div className='mt-2'>
         <input
